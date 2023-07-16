@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EDK forum</title>
+	<link rel="stylesheet" href="css/noUislider.css">
+	<link rel="stylesheet" href="css/glightbox.css">
+	<link rel="stylesheet" href="css/app.css">
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<!--Header-->
+		<header id="header" class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<!--Logo-->
+					<a href="index.html" class="header__logo">
+						<img src="images/icon/logo.svg" alt="" width="106" height="40">
+					</a>
+					<nav class="header__menu nav">
+						<ul class="nav__list list-reset">
+							<li class="nav__item">
+								<a href="#about" class="nav__link js-smooth-scroll">
+									<span>Чем занимаемся</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#scheme" class="nav__link js-smooth-scroll">
+									<span>Схема работы</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#reports" class="nav__link js-smooth-scroll">
+									<span>Отчетность</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#why" class="nav__link js-smooth-scroll">
+									<span>Почему с нами выгодно</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#calculator" class="nav__link js-smooth-scroll">
+									<span>Калькулятор доходности</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__panel">
+						<ul class="socials list-reset">
+							<li class="socials__item">
+								<a href="#" class="socials__link" target="_blank">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="40" height="40" rx="20" fill="white" />
+										<path d="M27.1248 27.3062C22.389 27.8248 17.6107 27.8248 12.8748 27.3062C12.0525 27.212 11.2459 26.449 11.1149 25.6252C10.5414 21.8971 10.5414 18.1032 11.1149 14.3752C11.2459 13.5513 12.0524 12.7884 12.8748 12.6941C17.6107 12.1755 22.389 12.1755 27.1248 12.6941C27.947 12.7884 28.7539 13.5513 28.8848 14.3752C29.4583 18.1032 29.4583 21.8971 28.8848 25.6252C28.7539 26.449 27.9474 27.2121 27.1248 27.3062Z" stroke="#0D50C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M23 20L18.5 17V23L23 20Z" stroke="#0D50C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a href="#" class="socials__link" target="_blank">
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="40" height="40" rx="20" fill="white" />
+										<path d="M16.2501 20.6441L24.6799 28.0623C24.7774 28.1481 24.8956 28.2071 25.0228 28.2336C25.15 28.26 25.2819 28.2529 25.4055 28.213C25.5292 28.1732 25.6403 28.1019 25.7281 28.0061C25.8159 27.9103 25.8774 27.7934 25.9064 27.6668L29.4327 12.2793C29.4632 12.1463 29.4568 12.0075 29.4142 11.8778C29.3716 11.7481 29.2944 11.6325 29.191 11.5435C29.0876 11.4544 28.9618 11.3953 28.8272 11.3724C28.6927 11.3496 28.5544 11.3638 28.4274 11.4138L11.1252 18.211C10.9744 18.2703 10.8468 18.3768 10.7616 18.5145C10.6764 18.6523 10.638 18.814 10.6523 18.9754C10.6667 19.1368 10.7328 19.2892 10.841 19.4098C10.9492 19.5304 11.0935 19.6128 11.2523 19.6445L16.2501 20.6441Z" stroke="#0D50C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M16.25 20.6442L29.0105 11.4282" stroke="#0D50C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M20.46 24.3489L17.5303 27.2786C17.4254 27.3835 17.2918 27.4549 17.1463 27.4838C17.0008 27.5128 16.85 27.4979 16.713 27.4412C16.5759 27.3844 16.4588 27.2883 16.3764 27.1649C16.294 27.0416 16.25 26.8966 16.25 26.7483V20.644" stroke="#0D50C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<div class="lang-panel" data-dropdown="wrapper">
+							<button class="lang-panel__link" type="button" data-dropdown="button">
+								<span>РУ</span>
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#0D50C3" stroke-width="1.5" stroke-miterlimit="10" />
+									<path d="M3 12H21" stroke="#0D50C3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M12 20.7585C14.0711 20.7585 15.75 16.8372 15.75 12.0001C15.75 7.16297 14.0711 3.2417 12 3.2417C9.92893 3.2417 8.25 7.16297 8.25 12.0001C8.25 16.8372 9.92893 20.7585 12 20.7585Z" stroke="#0D50C3" stroke-width="1.5" stroke-miterlimit="10" />
+								</svg>
+							</button>
+							<div class="lang-panel__dropdown">
+								<ul class="main-menu list-reset">
+									<li>
+										<button type="button" class="active">
+											Русский
+										</button>
+									</li>
+									<li>
+										<button type="button">
+											English
+										</button>
+									</li>
+									<li>
+										<button type="button">
+											Español
+										</button>
+									</li>
+									<li>
+										<button type="button">
+											Français
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<button type="button" class="b-btn b-btn--blue js-show-popup" data-trigger="connection-popup">
+							<span>Участвовать</span>
+						</button>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="container">
+					<div class="hero__top">
+						<div class="hero__left">
+							<h2 class="hero__title">
+								Стань участником EDK FORUM
+							</h2>
+							<div class="hero__text">
+								<p>
+									и зарабатывай до 30% в месяц вместе с нами
+								</p>
+							</div>
+							<a href="#" class="b-btn b-btn--main js-show-popup" data-trigger="connection-popup">
+								<span>Участвовать</span>
+							</a>
+						</div>
+						<div class="hero__right">
+							<picture>
+								<source srcset="images/home/hero/peoples.webp 1x, images/home/hero/peoples@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/home/hero/peoples.png 1x, images/home/hero/peoples@2x.png 1.3x" type="image/png">
+								<img src="images/home/hero/peoples.png" width="648" height="680" alt="">
+							</picture>
+						</div>
+						<div class="hero__item">
+							<div class="hero__text">
+								<p>
+									Инвестиционный актив на старте
+								</p>
+							</div>
+							<div class="hero__price">
+								1 000$
+							</div>
+						</div>
+						<div class="hero__item">
+							<div class="hero__text">
+								<p>
+									Инвестиционный актив через 200 дней
+								</p>
+							</div>
+							<div class="hero__price">
+								2 000$
+							</div>
+						</div>
+						<div class="hero__item hero__item--blue">
+							<div class="hero__text">
+								<p>
+									Ваша прибыль
+								</p>
+							</div>
+							<div class="hero__price">
+								+1 000$
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="supervisor">
+				<div class="container">
+					<div class="supervisor__grid">
+						<div class="supervisor__left">
+							<picture>
+								<source srcset="images/home/supervisor/sundukov.webp 1x, images/home/supervisor/sundukov@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/home/supervisor/sundukov.png 1x, images/home/supervisor/sundukov@2x.png 1.3x" type="image/png">
+								<img src="images/home/supervisor/sundukov.png" width="474" height="546" alt="">
+							</picture>
+						</div>
+						<div class="supervisor__right box-item box-item--background">
+							<span class="supervisor__spoiler">
+								Руководитель проекта
+							</span>
+							<h2 class="supervisor__title">
+								Евгений Сундуков
+							</h2>
+							<div class="supervisor__text">
+								<p>
+									Бизнесмен, идеолог, кооператор, учредитель ООО «Древпром», основатель EDK Forum. Окончил
+									Московский государственный университет коммерции и права по специальностям «Экономика и
+									юридическое сопровождение финансово-хозяйственной деятельности». Более 15 лет опыта в
+									экономической сфере и ведении бизнеса.
+								</p>
+							</div>
+							<a href="#" class="supervisor__link section-link" target="_blank">Личный сайт Евгения</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about" id="about">
+				<div class="container">
+					<div class="about__grid">
+						<div class="about__left box-item">
+							<h2 class="section-title about__title">
+								Чем мы занимаемся
+							</h2>
+							<div class="about__text">
+								<p>
+									Управление доверительным капиталом — это инвестиционная стратегия, при которой инвесторы вносят
+									свои средства в общий инвестиционный пул, который затем управляется опытными трейдерами.
+									Полученная доходность от торговли равномерно распределяется среди всех участников пула
+									пропорционально их вложениям. Таким образом, каждый инвестор имеет возможность получить
+									доходность в соответствии с размером своего вклада, без необходимости непосредственно
+									участвовать в торговых операциях. Доверительное управление предоставляет инвесторам удобный и
+									прозрачный способ инвестирования, позволяя им получать прибыль от успешной работы опытных
+									трейдеров.
+								</p>
+							</div>
+						</div>
+						<div class="about__video">
+							<div class="about__wrapper">
+								<a href="https://www.youtube.com/embed/DzNmUNvnB04" class="video glightbox">
+									<div class="video__poster">
+										<picture>
+											<source srcset="images/home/about/video.webp 1x, images/home/about/video@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/home/about/video.jpg 1x, images/home/about/video@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/home/about/video.jpg" width="720" height="480" alt="">
+										</picture>
+									</div>
+									<div class="video__btn">
+										<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="60" cy="60" r="60" fill="#fff" />
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M53.2 47.31a2.478 2.478 0 0 1 2.4 0l19.2 10.686A2.3 2.3 0 0 1 76 60a2.3 2.3 0 0 1-1.2 2.004L55.6 72.69a2.478 2.478 0 0 1-2.4 0 2.3 2.3 0 0 1-1.2-2.004V49.314a2.3 2.3 0 0 1 1.2-2.004Z" fill="#0E51C4" />
+										</svg>
+									</div>
+								</a>
+							</div>
+							<div class="about__wrap">
+								Видео о компании EDK Forum
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="scheme" id="scheme">
+				<div class="container">
+					<div class="scheme__wrapper">
+						<div class="scheme__head">
+							<h2 class="scheme__title section-title">
+								Схема работы
+							</h2>
+							<div class="scheme__text">
+								<p>
+									Инвесторы делают вклад с помощью компании EDK Forum. Эти инвестиции трейдеры компании
+									преумножают на рынках доходности. Прибыль от торговли распределяется между инвесторами.
+								</p>
+							</div>
+						</div>
+						<div class="scheme__grid">
+							<div class="scheme__item">
+								<div class="scheme__img">
+									<picture>
+										<source srcset="images/home/scheme/scheme-item-1.webp 1x, images/home/scheme/scheme-item-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/home/scheme/scheme-item-1.png 1x, images/home/scheme/scheme-item-1@2x.png 1.3x" type="image/png">
+										<img src="images/home/scheme/scheme-item-1.png" width="280" height="268" alt="">
+									</picture>
+								</div>
+							</div>
+							<div class="scheme__item">
+								<div class="scheme__img">
+									<picture>
+										<source srcset="images/home/scheme/scheme-item-2.webp 1x, images/home/scheme/scheme-item-2@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/home/scheme/scheme-item-2.png 1x, images/home/scheme/scheme-item-2@2x.png 1.3x" type="image/png">
+										<img src="images/home/scheme/scheme-item-2.png" width="280" height="268" alt="">
+									</picture>
+								</div>
+							</div>
+							<div class="scheme__item">
+								<div class="scheme__img">
+									<picture>
+										<source srcset="images/home/scheme/scheme-item-3.webp 1x, images/home/scheme/scheme-item-3@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/home/scheme/scheme-item-3.png 1x, images/home/scheme/scheme-item-3@2x.png 1.3x" type="image/png">
+										<img src="images/home/scheme/scheme-item-3.png" width="280" height="268" alt="">
+									</picture>
+								</div>
+							</div>
+							<div class="scheme__item">
+								<div class="scheme__img">
+									<picture>
+										<source srcset="images/home/scheme/scheme-item-4.webp 1x, images/home/scheme/scheme-item-4@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/home/scheme/scheme-item-4.png 1x, images/home/scheme/scheme-item-4@2x.png 1.3x" type="image/png">
+										<img src="images/home/scheme/scheme-item-4.png" width="280" height="268" alt="">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reporting" id="reports">
+				<div class="container">
+					<div class="reporting__wrapper">
+						<h2 class="section-title reporting__title">
+							Отчетность о торговле тендеров за 3 года
+						</h2>
+						<div class="reporting__grid">
+							<a href="#" class="reporting__link" download>
+								<div class="reporting__wrap">
+									<span>Отчетность за 2020 год</span>
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="20" cy="20" r="20" fill="#F2F8FF" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M16.75 13.5C16.75 13.0858 17.0858 12.75 17.5 12.75H26.5C26.9142 12.75 27.25 13.0858 27.25 13.5V22.5C27.25 22.9142 26.9142 23.25 26.5 23.25C26.0858 23.25 25.75 22.9142 25.75 22.5V14.25H17.5C17.0858 14.25 16.75 13.9142 16.75 13.5Z" fill="#0D50C3" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M27.0302 12.9697C27.3231 13.2626 27.3231 13.7374 27.0302 14.0303L14.3023 26.7583C14.0094 27.0512 13.5345 27.0512 13.2416 26.7583C12.9487 26.4654 12.9487 25.9905 13.2416 25.6976L25.9695 12.9697C26.2624 12.6768 26.7373 12.6768 27.0302 12.9697Z" fill="#0D50C3" />
+									</svg>
+								</div>
+							</a>
+							<a href="#" class="reporting__link" download>
+								<div class="reporting__wrap">
+									<span>Отчетность за 2021 год</span>
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="20" cy="20" r="20" fill="#F2F8FF" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M16.75 13.5C16.75 13.0858 17.0858 12.75 17.5 12.75H26.5C26.9142 12.75 27.25 13.0858 27.25 13.5V22.5C27.25 22.9142 26.9142 23.25 26.5 23.25C26.0858 23.25 25.75 22.9142 25.75 22.5V14.25H17.5C17.0858 14.25 16.75 13.9142 16.75 13.5Z" fill="#0D50C3" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M27.0302 12.9697C27.3231 13.2626 27.3231 13.7374 27.0302 14.0303L14.3023 26.7583C14.0094 27.0512 13.5345 27.0512 13.2416 26.7583C12.9487 26.4654 12.9487 25.9905 13.2416 25.6976L25.9695 12.9697C26.2624 12.6768 26.7373 12.6768 27.0302 12.9697Z" fill="#0D50C3" />
+									</svg>
+								</div>
+							</a>
+							<a href="#" class="reporting__link" download>
+								<div class="reporting__wrap">
+									<span>Отчетность за 2022 год</span>
+									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="20" cy="20" r="20" fill="#F2F8FF" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M16.75 13.5C16.75 13.0858 17.0858 12.75 17.5 12.75H26.5C26.9142 12.75 27.25 13.0858 27.25 13.5V22.5C27.25 22.9142 26.9142 23.25 26.5 23.25C26.0858 23.25 25.75 22.9142 25.75 22.5V14.25H17.5C17.0858 14.25 16.75 13.9142 16.75 13.5Z" fill="#0D50C3" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M27.0302 12.9697C27.3231 13.2626 27.3231 13.7374 27.0302 14.0303L14.3023 26.7583C14.0094 27.0512 13.5345 27.0512 13.2416 26.7583C12.9487 26.4654 12.9487 25.9905 13.2416 25.6976L25.9695 12.9697C26.2624 12.6768 26.7373 12.6768 27.0302 12.9697Z" fill="#0D50C3" />
+									</svg>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="why" id="why">
+				<div class="container">
+					<div class="why__grid">
+						<div class="why__item">
+							<h2 class="why__title">
+								Почему с нами выгодно
+							</h2>
+							<div class="why__image">
+								<picture>
+									<source srcset="images/home/why/edk-shield.webp 1x, images/home/why/edk-shield@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/why/edk-shield.png 1x, images/home/why/edk-shield@2x.png 1.3x" type="image/png">
+									<img src="images/home/why/edk-shield.png" width="424" height="449" alt="">
+								</picture>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__about">
+								Профессиональная команда управленцев с большим опытом
+							</div>
+							<a href="#" class="why__link section-link" target="_blank">Смотреть команду</a>
+							<div class="why__image">
+								<picture>
+									<source srcset="images/home/why/man.webp 1x, images/home/why/man@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/why/man.png 1x, images/home/why/man@2x.png 1.3x" type="image/png">
+									<img src="images/home/why/man.png" width="228" height="307" alt="">
+								</picture>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__about">
+								Юридическая модель
+							</div>
+							<div class="why__text">
+								<p>
+									позволяет безопасно работать по всему миру
+								</p>
+							</div>
+							<div class="why__image">
+								<picture>
+									<source srcset="images/home/why/planet.webp 1x, images/home/why/planet@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/why/planet.png 1x, images/home/why/planet@2x.png 1.3x" type="image/png">
+									<img src="images/home/why/planet.png" width="125" height="129" alt="">
+								</picture>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__about">
+								Выгодные инвестиционные направления
+							</div>
+							<div class="why__text">
+								<p>
+									для инвесторов
+								</p>
+							</div>
+							<div class="why__image">
+								<picture>
+									<source srcset="images/home/why/pie-chart.webp 1x, images/home/why/pie-chart@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/why/pie-chart.png 1x, images/home/why/pie-chart@2x.png 1.3x" type="image/png">
+									<img src="images/home/why/pie-chart.png" width="228" height="190" alt="">
+								</picture>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__about">
+								Уникальная партнерская программа
+							</div>
+							<div class="why__text">
+								<p>
+									для активных участников
+								</p>
+							</div>
+							<div class="why__image">
+								<picture>
+									<source srcset="images/home/why/woman.webp 1x, images/home/why/woman@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/why/woman.png 1x, images/home/why/woman@2x.png 1.3x" type="image/png">
+									<img src="images/home/why/woman.png" width="125" height="195" alt="">
+								</picture>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__about">
+								Ежемесячные отчеты о торговле
+							</div>
+							<div class="why__text">
+								<p>
+									от команды трейдеров
+								</p>
+							</div>
+							<div class="why__image">
+								<picture>
+									<source srcset="images/home/why/bitcoin.webp 1x, images/home/why/bitcoin@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/home/why/bitcoin.png 1x, images/home/why/bitcoin@2x.png 1.3x" type="image/png">
+									<img src="images/home/why/bitcoin.png" width="189" height="210" alt="">
+								</picture>
+							</div>
+						</div>
+						<div class="why__item">
+							<div class="why__about">
+								Собственные IT-продукты
+							</div>
+							<a href="#" class="why__link">
+								Astra trade
+							</a>
+							<a href="#" class="why__link">
+								Crypto wallet
+							</a>
+							<img class="why__phone" src="images/home/why/iphone.png" alt="" width="536" height="366">
+							<img class="why__astra" src="images/home/why/astra.png" alt="" width="222" height="208">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="calculator" id="calculator">
+				<div class="container">
+					<div class="calculator__grid">
+						<div class="calculator__main">
+							<h2 class="section-title calculator__title">
+								Калькулятор доходности
+							</h2>
+							<div class="calculator__top">
+								<label class="calculator__label" for="input-1">
+									<span>Выберите сумму вклада</span>
+									<input class="calculator__input" type="number" id="input-1" min="0" placeholder="0">
+								</label>
+								<div class="range" id="range-slider"></div>
+								<div class="calculator__wrap">
+									<span class="calculator__min">
+										$50
+									</span>
+									<span class="calculator__max">
+										$10 000
+									</span>
+								</div>
+							</div>
+							<div class="calculator__bottom">
+								<div class="calculator__text">
+									Через 200 дней вы получите:
+								</div>
+								<div class="calculator__price">
+									$ <span class="price">80</span>
+								</div>
+							</div>
+							<button type="button" class="b-btn b-btn--blue">
+								<span>Инвестировать</span>
+							</button>
+						</div>
+						<div class="calculator__img">
+							<picture>
+								<source srcset="images/home/calculator/chart.webp 1x, images/home/calculator/chart@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/home/calculator/chart.png 1x, images/home/calculator/chart@2x.png 1.3x" type="image/png">
+								<img src="images/home/calculator/chart.png" width="424" height="595" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="partners">
+				<div class="container">
+					<div class="partners__grid">
+						<div class="partners__left">
+							<h2 class="partners__title">
+								Если ты лидер с командой, ты можешь зарабатывать неограниченный доход на построении сети в
+								партнерской программе EDK FORUM
+							</h2>
+							<div class="partners__text">
+								<p>
+									Если у тебя пока нет опыта в этом, но ты активный и целеустремлённый, мы научим, как это сделать
+									в кратчайшие сроки.
+								</p>
+							</div>
+							<a href="#" class="b-btn b-btn--blue">
+								<span>Присоединиться</span>
+							</a>
+						</div>
+						<div class="partners__right">
+							<picture>
+								<source srcset="images/home/partners/partners.webp 1x, images/home/partners/partners@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/home/partners/partners.png 1x, images/home/partners/partners@2x.png 1.3x" type="image/png">
+								<img src="images/home/partners/partners.png" width="649" height="560" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="cta">
+				<div class="container">
+					<div class="cta__wrapper">
+						<div class="cta__text">
+							Сделай свои мечты реальностью — действуй сейчас!
+						</div>
+						<a href="#" class="b-btn b-btn--main js-show-popup" data-trigger="connection-popup">
+							<span>Участвовать</span>
+						</a>
+						<div class="cta__image">
+							<picture>
+								<source srcset="images/home/cta/cta.webp 1x, images/home/cta/cta@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/home/cta/cta.png 1x, images/home/cta/cta@2x.png 1.3x" type="image/png">
+								<img src="images/home/cta/cta.png" width="568" height="484" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<div class="overlay js-overlay"></div>
+	<div class="popup popup--connection js-popup" data-popup="connection-popup">
+		<button type="button" class="popup__close js-popup-close">
+			<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M32 56C45.2548 56 56 45.2548 56 32C56 18.7452 45.2548 8 32 8C18.7452 8 8 18.7452 8 32C8 45.2548 18.7452 56 32 56Z" stroke="white" stroke-width="4" stroke-miterlimit="10" />
+				<path d="M40 24L24 40" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M40 40L24 24" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+
+		</button>
+		<div class="popup__wrap">
+			<div class="connection">
+				<div class="connection__left">
+					<div class="connection__wrap">
+						<h3 class="connection__title">
+							Контакты владельца
+							лендинга
+						</h3>
+						<div class="connection__text">
+							<p>
+								По всем интересующим вопросам пишите или звоните по указанным контактам
+							</p>
+						</div>
+					</div>
+					<ul class="connection__list list-reset">
+						<li class="connection__item">
+							<div class="connection__name">
+								Телефон
+							</div>
+							<a href="tel:89999999999" class="connection__link">8 (999) 999-99-99</a>
+						</li>
+						<li class="connection__item">
+							<div class="connection__name">
+								Email
+							</div>
+							<a href="tel:89999999999" class="connection__link">mail@mail.com</a>
+						</li>
+						<li class="connection__item">
+							<div class="connection__name">
+								Telegram
+							</div>
+							<a href="http://t.me/vladelets" class="connection__link" target="_blank">@vladelets</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+	<script src="js/glightbox.min.js"></script>
+</body>
+
+</html>
